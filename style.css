@@ -350,9 +350,3 @@ button:disabled { background-color: #ced4da !important; color: #6c757d !importan
     .video-output-area { flex-direction: row; padding: 20px; }
     .video-box { flex: 1 1 300px; min-width: 250px; margin-bottom: 0; }
 }
-
-#school-emblem-2 {
-    max-height: 60px;     /* 設定與第一個 Logo 相同的高度 */
-    object-fit: contain;
-    margin-left: 15px;  /* 在兩個校徽之間增加 15px 的間距 */
-}
