@@ -67,19 +67,19 @@ body::before {
 }
 
 #school-logo {
-    max-height: 10px; 
+    max-height: 70px; 
     max-width: 230px; 
     object-fit: contain; 
     margin-left: 15px;  /* 將間距移到這裡 */
 }
 
 #school-emblem-2 {
-    max-height: 10px;
+    max-height: 60px;
     object-fit: contain;
     /* 這裡不再需要 margin-left */
 }
 #lab-logo {
-    max-height: 40px; 
+    max-height: 70px; 
     max-width: 180px; 
     object-fit: contain; 
 }
@@ -301,12 +301,12 @@ button:disabled { background-color: #ced4da !important; color: #6c757d !importan
 /* Media Queries */
 @media (max-width: 767px) {
     .site-header { height: 65px; padding: 5px clamp(10px, 3vw, 15px); top: 6px; } 
-    #school-emblem-2 { max-height: 30px; }
+    #school-emblem-2 { max-height: 50px; }
     #school-logo {
-        max-height: 20px;    /* 手機版的高度，建議與 school-logo 相同 */
+        max-height: 40px;    /* 手機版的高度，建議與 school-logo 相同 */
         margin-left: 5px; /* 手機版間距可以稍微縮小 */
     }
-    #lab-logo { max-height: 50px; }
+    #lab-logo { max-height: 60px; }
     .container { margin-top: calc(6px + 65px + 10px); }
 
     .photo-upload-area, .video-output-area {
