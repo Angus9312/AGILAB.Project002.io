@@ -67,19 +67,19 @@ body::before {
 }
 
 #school-logo {
-    max-height: 70px; 
+    max-height: 50px; 
     max-width: 230px; 
     object-fit: contain; 
     margin-left: 15px;  /* 將間距移到這裡 */
 }
 
 #school-emblem-2 {
-    max-height: 50px;
+    max-height: 40px;
     object-fit: contain;
     /* 這裡不再需要 margin-left */
 }
 #lab-logo {
-    max-height: 80px; 
+    max-height: 50px; 
     max-width: 180px; 
     object-fit: contain; 
 }
