@@ -303,7 +303,7 @@ button:disabled { background-color: #ced4da !important; color: #6c757d !importan
     .site-header { height: 65px; padding: 5px clamp(10px, 3vw, 15px); top: 6px; } 
     #school-emblem-2 { max-height: 50px; }
     #school-logo {
-        max-height: 50px;    /* 手機版的高度，建議與 school-logo 相同 */
+        max-height: 70px;    /* 手機版的高度，建議與 school-logo 相同 */
         margin-left: 5px; /* 手機版間距可以稍微縮小 */
     }
     #lab-logo { max-height: 60px; }
