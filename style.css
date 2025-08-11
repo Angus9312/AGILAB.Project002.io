@@ -301,12 +301,12 @@ button:disabled { background-color: #ced4da !important; color: #6c757d !importan
 /* Media Queries */
 @media (max-width: 767px) {
     .site-header { height: 65px; padding: 5px clamp(10px, 3vw, 15px); top: 6px; } 
-    #school-emblem-2 { max-height: 70px; }
+    #school-emblem-2 { max-height: 50px; }
     #school-logo {
-        max-height: 40px;    /* 手機版的高度，建議與 school-logo 相同 */
-        margin-left: 10px; /* 手機版間距可以稍微縮小 */
+        max-height: 30px;    /* 手機版的高度，建議與 school-logo 相同 */
+        margin-left: 5px; /* 手機版間距可以稍微縮小 */
     }
-    #lab-logo { max-height: 80px; }
+    #lab-logo { max-height: 50px; }
     .container { margin-top: calc(6px + 65px + 10px); }
 
     .photo-upload-area, .video-output-area {
