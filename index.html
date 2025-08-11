@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGILAB Pure Visual Localization Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NEW: Site Header for Logos -->
+    <header class="site-header">
+        <div class="logo-container school-logo-container">
+            <img src="school_logo.png" alt="Tamkang University AI Department Logo" id="school-logo">
+        </div>
+        <div class="logo-container lab-logo-container">
+            <img src="lab_logo.png" alt="AGILAB Logo" id="lab-logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Pure Visual<br>Localization Model</h1>
+
+        <section id="photo-upload-section">
+            <h2>1. Upload Location Image</h2>
+            <div class="photo-upload-area">
+                <div class="photo-box">
+                    <label for="current-location-file">Current Location Image:</label>
+                    <input type="file" id="current-location-file" accept="image/*" style="display: none;">
+                    <button id="btn-select-current-photo">Select Photo</button>
+                    <img id="img-current-photo" src="#" alt="Current location preview" class="photo-preview">
+                    <p id="current-photo-name" class="photo-name-display">No image selected</p>
+                </div>
+                <div class="photo-box">
+                    <label for="destination-file">Target Location Image:</label>
+                    <input type="file" id="destination-file" accept="image/*" style="display: none;">
+                    <button id="btn-select-destination-photo">Select Photo</button>
+                    <img id="img-destination-photo" src="#" alt="Target location preview" class="photo-preview">
+                    <p id="destination-photo-name" class="photo-name-display">No image selected</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-generation-output-section">
+            <div class="section-header-with-toggle">
+                <h2>2. Navigation Video</h2>
+                <div class="ios-toggle-switch-container">
+                    <input type="checkbox" id="nav-mode-toggle" class="ios-toggle-checkbox">
+                    <label for="nav-mode-toggle" class="ios-toggle-label">
+                        <span class="ios-toggle-inner"></span>
+                        <span class="ios-toggle-switch-knob"></span>
+                    </label>
+                    <span id="nav-mode-text" class="nav-mode-text-label">Visual Navigation</span>
+                </div>
+            </div>
+
+            <button id="btn-generate-videos" disabled>Generate Video</button>
+
+            <div id="video-output-area" class="video-output-area hidden">
+                <div class="video-box">
+                    <h3 id="visual-nav-title">Visual Navigation Preview</h3>
+                    <div class="video-player-container">
+                        <video id="visual-nav-video" controls autoplay playsinline muted preload="auto"></video>
+                        <div class="loading-animation-overlay">
+                            <img src="rocket.png" alt="Loading..." class="loading-rocket">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill"></div>
+                            </div>
+                            <div class="rocket-flames"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-box">
+                    <h3 id="indoor-map-title">Indoor Map Localization and Navigation</h3>
+                     <div class="video-player-container">
+                        <video id="indoor-map-video" controls autoplay playsinline muted preload="auto"></video>
+                        <div class="loading-animation-overlay">
+                            <img src="rocket.png" alt="Loading..." class="loading-rocket">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill"></div>
+                            </div>
+                             <div class="rocket-flames"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
