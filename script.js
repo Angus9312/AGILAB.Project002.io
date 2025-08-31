@@ -300,12 +300,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         visualNavStandardReady = false;
         indoorMapStandardReady = false;
-        visualNavVideo.dataset.intendedToPlay = 'false'; 
+        visualNavVideo.dataset.intendedToPlay = 'false';
         indoorMapVideo.dataset.intendedToPlay = 'false';
 
         if (isRealtimeMode) {
-            visualNavTitle.textContent = "Real-Time Indoor Map Localization and Navigation";
-            indoorMapTitle.textContent = "Current Location Image";
+            indoorMapTitle.textContent = "Real-Time Indoor Map Localization and Navigation";
+            visualNavTitle.textContent = "Current Location Image";
             videoOutputArea.classList.add('realtime-mode');
         } else {
             visualNavTitle.textContent = "Visual Navigation Preview";
